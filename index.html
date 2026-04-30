@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s1y4x1 - 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 20px 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .link-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .icon-github {
+            background: #333;
+            color: white;
+        }
+
+        .icon-qr {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .link-info {
+            text-align: left;
+            flex: 1;
+        }
+
+        .link-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .link-url {
+            font-size: 14px;
+            color: #888;
+            word-break: break-all;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .link-card {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">S</div>
+        <h1>s1y4x1</h1>
+        <p class="subtitle">开发者 · 创作者</p>
+
+        <div class="links">
+            <a href="https://github.com/s1y4x1/BJTU-course-assistant" target="_blank" rel="noopener noreferrer" class="link-card">
+                <div class="link-icon icon-github">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-2.461 0-.543.197-1.013.52-1.461-.497-.213-2.146-1.07-2.146-2.539 0-.55.21-1.055.55-1.425-1.79-.218-3.676-.896-3.676-1.694 0-.373.16-.716.42-1.001-.42-1.296-.42-2.695 0-4.001 1.02.102 2.055.538 2.7 1.01 1.32-.397 2.72-.599 4.12-.599 1.4 0 2.8.202 4.12.599.645-.472 1.68-.908 2.7-1.01.42 1.305.42 2.705 0 4.001.26.285.42.628.42 1.001 0 .798-1.886 1.476-3.676 1.694.34.37.55.875.55 1.425 0 1.209-1.65 2.236-2.146 2.461.344.299.655.829.762 1.604.685.307 2.422.837 3.492-.997.343.301.655.831.762 1.604.344-.307.655-.831.762-1.604z"/>
+                    </svg>
+                </div>
+                <div class="link-info">
+                    <div class="link-title">BJTU Course Assistant</div>
+                    <div class="link-url">github.com/s1y4x1/BJTU-course-assistant</div>
+                </div>
+            </a>
+
+            <a href="https://s1y4x1.github.io/QR-Art" target="_blank" rel="noopener noreferrer" class="link-card">
+                <div class="link-icon icon-qr">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <path d="M3 3h6v6H3V3zm2 2v2h2V5H5zm8-2h6v6h-6V3zm2 2v2h2V5h-2zM3 13h6v6H3v-6zm2 2v2h2v-2H5zm13-2h3v2h-3v-2zm-3 0h2v2h-2v-2zm3 3h3v2h-3v-2zm-3 0h2v2h-2v-2zm3 3h3v2h-3v-2zm-3 0h2v2h-2v-2z"/>
+                    </svg>
+                </div>
+                <div class="link-info">
+                    <div class="link-title">QR Art</div>
+                    <div class="link-url">s1y4x1.github.io/QR-Art</div>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            <p>© 2024 s1y4x1. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
