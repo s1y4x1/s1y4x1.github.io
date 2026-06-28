@@ -1,6 +1,10 @@
 {
-	"ver": "v11.3.3",
-	"name": "B.3.3",
-	"desc": "feat: 添加作业提醒观察逻辑，优化作业截止通知功能",
-	"url": "2026/06/27/20260627235654945222.zip"
+	"ver": "v11.3.8",
+	"name": "B.3.8",
+	"desc": "- [feat: 优化二维码生成逻辑，添加二维码应用于元素的功能，更新版本检查模块](https://github.com/s1y4x1/BJTU-course-assistant/commit/8d3ec634dd7e950370f9765f5b498289d49bfc62)
+- [fix: 修改作业状态提示信息，提升用户体验](https://github.com/s1y4x1/BJTU-course-assistant/commit/ae8a3daaf9c0334fed5cd7f083f755c1d1e32b84)
+- [fix: 修正作业提交状态提示信息，优化用户体验](https://github.com/s1y4x1/BJTU-course-assistant/commit/3c1422b8542d75a05f2e35150e9ed9c9b4b172f1)
+- [feat: 更新管理员登录逻辑，添加从个人中心获取新密码的功能，优化消息复制体验](https://github.com/s1y4x1/BJTU-course-assistant/commit/963789102219571285801c67af8367c925d16ca9)
+- [feat: 移除headerQrEnabled相关逻辑，添加日期格式化函数](https://github.com/s1y4x1/BJTU-course-assistant/commit/e3ece9a4b1ac3b3908c93e55d8ede8d205bec053)",
+	"url": "2026/06/28/20260628135321412073.zip"
 }
