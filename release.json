@@ -5,5 +5,5 @@
 	"desc": "更新管理员默认密码\nrefactor: 优化二维码生成逻辑，使用SVG格式提升显示效果",
 	"url": "http://123.121.147.7:8081/rp/2026/06/29/20260629134530356947.zip",
 	"reload": true,
-	"force": false
+	"force": true
 }
