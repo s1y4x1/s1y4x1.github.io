@@ -6,5 +6,5 @@
 	"url": "http://123.121.147.7:8081/rp/2026/06/29/20260629233532703549.zip",
 	"update": ["_locales/zh_CN/messages.json","account-login.js","app.css","app.html","manifest.json","update-checker.js"],
 	"reload": true,
-	"force": true
+	"force": false
 }
