@@ -4,7 +4,14 @@
 	"time": "2026-06-29 23:36:00",
 	"desc": "feat: 更新扩展描述，优化功能说明\nfeat: 增强下载管理功能\nfeat: 添加版本下载进度条，优化下载体验\nfeat: 更新管理员默认密码，提升安全性\nfeat: 更新版本检查逻辑，支持多个更新源，增强稳定性\nfeat: 添加新的主机权限",
 	"url": "http://123.121.147.7:8081/rp/2026/06/29/20260629233532703549.zip",
-	"update": ["_locales/zh_CN/messages.json","account-login.js","app.css","app.html","manifest.json","update-checker.js"],
+	"update": [
+		"_locales/zh_CN/messages.json",
+		"account-login.js",
+		"app.css",
+		"app.html",
+		"manifest.json",
+		"update-checker.js"
+	],
 	"reload": true,
-	"force": false,
+	"force": false
 }
