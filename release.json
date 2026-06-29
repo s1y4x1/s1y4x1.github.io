@@ -6,5 +6,5 @@
 	"url": "http://123.121.147.7:8081/rp/2026/06/29/20260629202253933260.zip",
 	"update": [],
 	"reload": true,
-	"force": true
+	"force": false
 }
