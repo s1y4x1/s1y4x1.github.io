@@ -13,5 +13,5 @@
 		"update-checker.js"
 	],
 	"reload": true,
-	"force": false
+	"force": false,
 }
