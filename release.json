@@ -6,7 +6,7 @@
 	"url": "http://123.121.147.7:8081/rp/2026/07/01/20260701185656933374.zip",
 	"update": [
 		"account-login.js",
-		"app.js",
+		"app.js"
 	],
 	"reload": false,
 	"force": false
