@@ -7,6 +7,6 @@
 	"update": [
 		true
 	],
-	"reload": false,
+	"reload": true,
 	"force": true
 }
