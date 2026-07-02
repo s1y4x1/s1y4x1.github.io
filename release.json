@@ -1,9 +1,9 @@
 {
-	"ver": "v11.10.2",
+	"ver": "v11.10.3",
 	"name": "B - Last Reld",
 	"time": "2026-07-03 04:32:10",
 	"desc": "- 支持归档下载\n- 重构平台获取逻辑\n- 初步支持接龙管家深色模式\n- 更新流程优化：这将是您最后一次手动重新加载\n- 其他优化",
-	"url": "https://zip1.webgetstore.com/2026/07/03/d75029baec4939579e8983bceefcfdd8.zip?sg=b08b4f9bcaab695f58b4cda5624576e9&e=6a46c809&fileName=BJTU-course-assistant-master.zip&fi=294204625",
+	"url": "http://123.121.147.7:8081/rp/2026/07/03/20260703045510115025.zip",
 	"update": [
 		true
 	],
