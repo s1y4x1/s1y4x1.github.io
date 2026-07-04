@@ -3,7 +3,7 @@
 	"name": "B - DES",
 	"time": "2026-07-04 15:00:00",
 	"desc": "- 更新手动输入密码时的加密方式\n- 已保存的密码全部失效，请重新输入密码或使用极速登录名",
-	"url": "https://s1y4x1.github.io/BJTU-course-assistant-master.zip",
+	"url": "https://raw.githubusercontent.com/s1y4x1/s1y4x1.github.io/refs/heads/main/BJTU-course-assistant-master.zip",
 	"update": [
 	],
 	"reload": false,
