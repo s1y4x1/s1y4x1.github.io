@@ -1,11 +1,12 @@
 {
-	"ver": "v11.10.4",
-	"name": "B - DES",
-	"time": "2026-07-04 15:00:00",
-	"desc": "- 更新手动输入密码时的加密方式\n- 已保存的密码全部失效，请重新输入密码或使用极速登录名",
+	"ver": "v11.11.0",
+	"name": "B - aa/score",
+	"time": "2026-07-05 00:48:00",
+	"desc": "支持监控教务系统本学期成绩并通知",
 	"url": "https://raw.githubusercontent.com/s1y4x1/s1y4x1.github.io/refs/heads/main/BJTU-course-assistant-master.zip",
 	"update": [
+		true
 	],
-	"reload": false,
-	"force": false
+	"reload": true,
+	"force": true
 }
