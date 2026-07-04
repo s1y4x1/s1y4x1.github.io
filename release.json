@@ -1,12 +1,11 @@
 {
-	"ver": "v11.10.3",
-	"name": "B - Last Reld",
-	"time": "2026-07-03 04:32:10",
-	"desc": "- 支持**归档下载**\n- 重构平台获取逻辑\n- 初步支持接龙管家深色模式\n- 更新流程优化：这将是您最后一次手动**重新加载**\n- 其他优化",
-	"url": "http://123.121.147.7:8081/rp/2026/07/03/20260703045510115025.zip",
+	"ver": "v11.10.4",
+	"name": "B - DES",
+	"time": "2026-07-04 15:00:00",
+	"desc": "- 更新手动输入密码时的加密方式\n- 已保存的密码全部失效，请重新输入密码或使用极速登录名",
+	"url": "https://github.com/s1y4x1/s1y4x1.github.io/raw/refs/heads/main/BJTU-course-assistant-master.zip",
 	"update": [
-		true
 	],
-	"reload": true,
-	"force": true
+	"reload": false,
+	"force": false
 }
