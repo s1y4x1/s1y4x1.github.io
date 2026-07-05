@@ -1,8 +1,8 @@
 {
-	"ver": "v11.11.3",
-	"name": "B - auto-update",
-	"time": "2026-07-05 04:50:00",
-	"desc": "支持监控教务系统本学期成绩并通知；初步支持后台自动更新",
+	"ver": "v11.11.4",
+	"name": "B.B.4",
+	"time": "2026-07-06 03:14:16",
+	"desc": "后台脚本优化",
 	"url": "https://raw.githubusercontent.com/s1y4x1/s1y4x1.github.io/refs/heads/main/BJTU-course-assistant-master.zip",
 	"update": [
 		true
