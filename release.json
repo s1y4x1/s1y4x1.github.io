@@ -1,6 +1,6 @@
 {
-	"ver": "v11.11.8",
-	"name": "B.B.8",
+	"ver": "v11.11.7",
+	"name": "B.B.7",
 	"time": "2026-07-06 03:14:16",
 	"desc": "后台脚本（自动更新、监控成绩）优化；初始化机制优化，避免重复请求",
 	"url": "https://raw.githubusercontent.com/s1y4x1/s1y4x1.github.io/refs/heads/main/BJTU-course-assistant-master.zip",
