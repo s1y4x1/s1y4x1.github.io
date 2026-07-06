@@ -1,7 +1,7 @@
 {
 	"ver": "v11.11.12",
 	"name": "B.B.C",
-	"time": "2026-07-07 70:00:00",
+	"time": "2026-07-07 00:00:00",
 	"desc": "- 紧急修复管理员登录名变更问题\n- 拆分模块，可能导致**不稳定**",
 	"url": "https://raw.githubusercontent.com/s1y4x1/s1y4x1.github.io/refs/heads/main/BJTU-course-assistant-master.zip",
 	"update": [
