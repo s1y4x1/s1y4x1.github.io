@@ -1,8 +1,8 @@
 {
 	"ver": "v11.11.10",
-	"name": "B.B.9",
-	"time": "2026-07-06 15:19:00",
-	"desc": "后台脚本（自动更新、监控成绩）优化；初始化机制优化，避免重复请求；修复导入账号列表的问题并优化性能；UI优化",
+	"name": "B.B.A",
+	"time": "2026-07-06 15:47:00",
+	"desc": "- 后台脚本（自动更新、监控成绩）优化\n- 初始化机制优化，避免重复请求\n- 修复导入账号列表的问题并优化性能\n- UI 优化（深色模式、进度条）\n- 支持设置后台任务间隔",
 	"url": "https://raw.githubusercontent.com/s1y4x1/s1y4x1.github.io/refs/heads/main/BJTU-course-assistant-master.zip",
 	"update": [
 	],
