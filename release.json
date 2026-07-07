@@ -1,9 +1,9 @@
 {
-	"ver": "v11.11.13",
-	"name": "B.B.D",
-	"time": "2026-07-07 01:24:00",
-	"desc": "- **紧急修复**管理员登录名变更问题\n- 拆分模块，可能导致**不稳定**\n- 更新错误处理优化\n- 获取同课教师表格显示优化",
-	"url": "https://raw.githubusercontent.com/s1y4x1/s1y4x1.github.io/refs/heads/main/BJTU-course-assistant-master.zip",
+	"ver": "v11.11.14",
+	"name": "B.B.E",
+	"time": "2026-07-07 23:12:00",
+	"desc": "- **紧急修复**管理员登录名变更问题\n- 拆分模块，可能导致**不稳定**\n- 更新错误处理优化\n- 获取同课教师表格显示优化\n- 智慧课程平台后台作业检测优化，避免前台打开页面干扰，可能导致**意外错误**\n> 欢迎**反馈**",
+	"url": "https://s1y4x1.github.io/BJTU-course-assistant-master.zip",
 	"update": [
 		true
 	],
