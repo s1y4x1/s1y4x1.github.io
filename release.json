@@ -8,6 +8,6 @@
 		true
 	],
 	"clean": false,
-	"reload": false,
+	"reload": true,
 	"force": true
 }
