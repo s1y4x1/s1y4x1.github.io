@@ -1,10 +1,10 @@
 {
-	"ver": "v13.5.0",
+	"ver": "v13.5.1",
 	"name": "vD-Pin",
 	"time": "2026-08-07 03:14:00",
-	"desc": "优化了接龙管家的登录时的流程\n检查并提醒固定到浏览器工具栏\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
+	"desc": "修复了主动更新时，用户选择不保留的模块没有被正确卸载的问题\n优化了接龙管家的登录时的流程\n检查并提醒固定到浏览器工具栏\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
 	"url": "https://s1y4x1.github.io/BJTU-course-assistant-master.zip",
-	"update": ["jlgj","app","core","options"],
+	"update": ["jlgj","app","core","options","updater"],
 	"clean": false,
 	"reload": true,
 	"force": true
