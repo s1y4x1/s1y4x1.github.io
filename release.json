@@ -5,7 +5,7 @@
 	"desc": "可选更新：「教务系统」评教、「中国大学MOOC」自动互评功能\n紧急更新补丁：解除智慧课程平台对每日交作业的 MD5 算法组件的依赖\n主程序中的更新相关代码移动至更新模块；验证码识别模块健壮性增强\n修复了智慧课程平台登录相关问题，优化了自动记录、删除登录信息的体验（仅进行了少量测试，可能产生未知问题）\n小幅 UI 调整：\n- 倒计时\n- 版本按钮\n- 下载更新及忽略按钮\n\n教务系统遇错重试优化\n修复了主动更新时，用户选择不保留的模块没有被正确卸载的问题\n优化了「接龙管家」的登录时的流程，及其深色模式的处理\n检查并提醒固定到浏览器工具栏\n「学堂在线」持续开发中⋯⋯\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
 	"url": "https://s1y4x1.github.io/BJTU-course-assistant-master.zip",
 	"update": [],
-	"clean": true,
+	"clean": false,
 	"reload": true,
 	"force": false
 }
