@@ -1,8 +1,8 @@
 {
-	"ver": "v14.1.0",
+	"ver": "v14.2.0",
 	"name": "vE-Qwen",
 	"time": "2026-08-19 01:00:00",
-	"desc": "# 「千问助手」正式开始公测\n`1.0` 持续打磨细节中⋯⋯\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
+	"desc": "# 「千问助手」正式开始公测\n`2.0` 支持执行 js 代码\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
 	"url": "https://s1y4x1.github.io/BJTU-course-assistant-master.zip",
 	"update": [],
 	"clean": false,
