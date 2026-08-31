@@ -1,8 +1,8 @@
 {
-	"ver": "v14.10.4",
+	"ver": "v14.11.4",
 	"name": "vE-Mail/du",
-	"time": "2026-08-31 18:00:00",
-	"desc": "# 教务系统优化\n`10.3` 支持在扩展页面查看；优化缓存；支持联动显示\n# 支持 BJTU 邮件系统\n`7.0` 支持 CAS(MIS) 登录\n# 「千问助手」正式开始公测\n`6.0` 支持执行 js 代码、完成复杂任务\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
+	"time": "2026-09-01 03:00:00",
+	"desc": "# 彩蛋\n`11.5` MJ，以及多项功能优化\n# 教务系统优化\n`10.3` 支持在扩展页面查看；优化缓存；支持联动显示\n# 支持 BJTU 邮件系统\n`7.0` 支持 CAS(MIS) 登录\n# 「千问助手」正式开始公测\n`6.0` 支持执行 js 代码、完成复杂任务\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
 	"url": "https://s1y4x1.github.io/BJTU-course-assistant-main.zip",
 	"update": [],
 	"clean": false,
