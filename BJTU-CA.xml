@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
   <app appid="nohooggnpcljnlhlgkebokhclccdepgl">
-    <updatecheck codebase="https://s1y4x1.github.io/assets/BJTU-course-assistant.crx" version="14.11.0" />
+    <updatecheck codebase="https://s1y4x1.github.io/assets/BJTU-course-assistant.crx" version="14.11.5" />
   </app>
 </gupdate>
