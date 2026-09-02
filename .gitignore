@@ -3,3 +3,5 @@
 .gitignore
 acc.json
 enc.json
+desc.md
+update-release.ps1
