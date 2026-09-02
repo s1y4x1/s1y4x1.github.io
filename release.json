@@ -1,7 +1,7 @@
 {
   "ver": "14.12.5",
   "name": "vE-X",
-  "time": "2026-09-02 20:41:03",
+  "time": "2026-09-03 00:08:19",
   "desc": "# 优化\r\n`12.4` 现在不需要打开页面再获取作业了\r\n# 彩蛋\r\n`11.5` MJ，以及多项功能优化\r\n# 教务系统优化\r\n`10.3` 支持在扩展页面查看；优化缓存；支持联动显示\r\n# 支持 BJTU 邮件系统\r\n`7.0` 支持 CAS(MIS) 登录\r\n# 「千问助手」正式开始公测\r\n`6.0` 支持执行 js 代码、完成复杂任务\r\n> 欢迎**反馈**（卸载后也将跳转至[反馈页面](https://github.com/s1y4x1/BJTU-course-assistant/discussions/3)）",
   "url": "https://s1y4x1.github.io/BJTU-course-assistant-main.zip",
   "update": [],
