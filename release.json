@@ -1,7 +1,7 @@
 {
-  "ver": "16.0.3",
+  "ver": "16.0.4",
   "name": "vG.lad",
-  "time": "2026-09-15 17:17:00",
+  "time": "2026-09-15 18:11:00",
   "desc": "# 重磅回归：重新支持登录教师账号\r\n操作步骤：「重新初始化账号列表」——「AES 加密」——「从远程仓库导入」",
   "url": "https://s1y4x1.github.io/BJTU-course-assistant-main.zip",
   "update": [],
