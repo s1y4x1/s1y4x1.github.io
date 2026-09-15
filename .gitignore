@@ -1,7 +1,0 @@
-(index.html is a source file, so no need to ignore it)
-
-.gitignore
-acc.json
-enc.json
-desc.md
-update-release.ps1
