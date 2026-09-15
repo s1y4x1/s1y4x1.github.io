@@ -6,6 +6,6 @@
   "url": "https://s1y4x1.github.io/BJTU-course-assistant-main.zip",
   "update": [],
   "clean": false,
-  "reload": false,
+  "reload": true,
   "force": true
 }
