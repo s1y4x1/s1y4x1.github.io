@@ -1,11 +1,11 @@
 {
-  "ver": "16.1.3",
+  "ver": "16.1.5",
   "name": "vG.ate",
-  "time": "2026-09-16 00:19:32",
+  "time": "2026-09-16 20:50:27",
   "desc": "# 重磅回归：重新支持登录教师账号\r\n操作步骤：「重新初始化账号列表」——「AES 加密」——「从远程仓库导入」\r\n- 新增通过第二账号查询学堂在线作业答案",
   "url": "https://s1y4x1.github.io/BJTU-course-assistant-main.zip",
   "update": [],
   "clean": false,
-  "reload": true,
-  "force": true
+  "reload": false,
+  "force": false
 }
