@@ -1,9 +1,3 @@
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-$OutputEncoding = [System.Text.Encoding]::UTF8
-$null = chcp 65001
-# 设置控制台输出编码为 UTF-8
-# 切换控制台代码页到 65001（UTF-8）
-
 # 如遇执行策略限制，先运行：
 # Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
