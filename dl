@@ -19,7 +19,20 @@ try {
 
 Write-Host "[2/4] Extracting to: $ExtractDir" -ForegroundColor Cyan
 try {
-    Expand-Archive -Path $ZipFile -DestinationPath $ExtractDir -Force
+    $ExtensionDir = Join-Path $ExtractDir "BJTU-course-assistant"
+    $StagingDir = Join-Path $env:TEMP ([Guid]::NewGuid().ToString('N'))
+    New-Item -ItemType Directory -Path $StagingDir | Out-Null
+    Expand-Archive -Path $ZipFile -DestinationPath $StagingDir -Force
+    New-Item -ItemType Directory -Path $ExtensionDir -Force | Out-Null
+    Get-ChildItem -LiteralPath (Join-Path $StagingDir 'BJTU-course-assistant-main') -Force |
+        Copy-Item -Destination $ExtensionDir -Recurse -Force
+    $ResolvedStagingDir = [IO.Path]::GetFullPath($StagingDir)
+    $TempRoot = [IO.Path]::GetFullPath($env:TEMP).TrimEnd('\') + '\'
+    if (-not $ResolvedStagingDir.StartsWith($TempRoot, [StringComparison]::OrdinalIgnoreCase) -or
+        (Split-Path -Leaf $ResolvedStagingDir) -notmatch '^[0-9a-f]{32}$') {
+        throw "Unexpected temporary directory: $ResolvedStagingDir"
+    }
+    Remove-Item -LiteralPath $ResolvedStagingDir -Recurse -Force
 } catch {
     Write-Host "Extraction failed: $($_.Exception.Message)" -ForegroundColor Red
     return
@@ -28,7 +41,6 @@ try {
 Write-Host "[3/4] Removing the temporary archive." -ForegroundColor Cyan
 Remove-Item $ZipFile -Force -ErrorAction SilentlyContinue
 
-$ExtensionDir = Join-Path $ExtractDir "BJTU-course-assistant-main"
 $BridgeInstaller = Join-Path $ExtensionDir "modules\local-bridge\install.ps1"
 
 Write-Host "[4/4] Installing the local Bridge." -ForegroundColor Cyan

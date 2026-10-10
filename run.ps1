@@ -13,7 +13,7 @@ param(
 
     [bool]$OpenExtensionPage = $true,
 
-    [string]$RepoFolderName = 'BJTU-course-assistant-main',
+    [string]$RepoFolderName = 'BJTU-course-assistant',
 
     [string]$ExtensionRelativePath = '.'
 )
@@ -86,7 +86,7 @@ function Get-ExtensionState {
                 }
             }
         } catch {
-            # æµè§ˆå™¨å¯èƒ½æ­£åœ¨é‡å†™è¯¥æ–‡ä»¶ï¼Œç¨åé‡è¯•
+            # ä¯ÀÀÆ÷¿ÉÄÜÕıÔÚÖØĞ´¸ÃÎÄ¼ş£¬ÉÔºóÖØÊÔ
         }
     }
     return $null
