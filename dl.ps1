@@ -41,12 +41,63 @@ try {
 Write-Host "[3/4] Removing the temporary archive." -ForegroundColor Cyan
 Remove-Item $ZipFile -Force -ErrorAction SilentlyContinue
 
+try {
+    $DefaultBrowser = (Get-ItemProperty -LiteralPath 'HKCU:\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https\UserChoice' -ErrorAction SilentlyContinue).ProgId
+    $BrowserNames = if ($DefaultBrowser -like 'ChromeHTML*') { @('chrome.exe', 'msedge.exe') } else { @('msedge.exe', 'chrome.exe') }
+    $BrowserPath = $null
+    foreach ($BrowserName in $BrowserNames) {
+        foreach ($RegistryRoot in @('HKCU:', 'HKLM:')) {
+            $AppPath = Get-ItemProperty -LiteralPath "$RegistryRoot\Software\Microsoft\Windows\CurrentVersion\App Paths\$BrowserName" -ErrorAction SilentlyContinue
+            if ($AppPath -and (Test-Path -LiteralPath $AppPath.'(default)' -PathType Leaf)) {
+                $BrowserPath = $AppPath.'(default)'
+                break
+            }
+        }
+        if (-not $BrowserPath) {
+            $RelativePath = if ($BrowserName -eq 'chrome.exe') { 'Google\Chrome\Application\chrome.exe' } else { 'Microsoft\Edge\Application\msedge.exe' }
+            foreach ($BrowserRoot in @(${env:ProgramFiles(x86)}, $env:ProgramFiles, $env:LOCALAPPDATA)) {
+                if (-not $BrowserRoot) { continue }
+                $CandidatePath = Join-Path $BrowserRoot $RelativePath
+                if (Test-Path -LiteralPath $CandidatePath -PathType Leaf) {
+                    $BrowserPath = $CandidatePath
+                    break
+                }
+            }
+        }
+        if ($BrowserPath) { break }
+    }
+    if (-not $BrowserPath) { throw 'Chrome or Edge was not found.' }
+    $ExtensionsUrl = if ([IO.Path]::GetFileName($BrowserPath) -ieq 'chrome.exe') { 'chrome://extensions/' } else { 'edge://extensions/' }
+    Start-Process -FilePath $BrowserPath -ArgumentList $ExtensionsUrl | Out-Null
+    Write-Host "Enable Developer mode, then load the unpacked extension from: $ExtensionDir" -ForegroundColor Yellow
+} catch {
+    Write-Warning "Could not open the extensions page: $($_.Exception.Message)"
+}
+
 $BridgeInstaller = Join-Path $ExtensionDir "modules\local-bridge\install.ps1"
 
 Write-Host "[4/4] Installing the local Bridge." -ForegroundColor Cyan
 try {
     if (-not (Test-Path -LiteralPath $BridgeInstaller -PathType Leaf)) {
         throw "Bridge installer not found: $BridgeInstaller"
+    }
+    if (-not (Get-Command node.exe -ErrorAction SilentlyContinue)) {
+        if (-not (Get-Command winget.exe -ErrorAction SilentlyContinue)) {
+            throw 'Node.js is not installed and winget is unavailable. Install Node.js, then run this script again.'
+        }
+        Write-Host 'Node.js was not found. Installing with winget...' -ForegroundColor Cyan
+        winget.exe install --id OpenJS.NodeJS --exact --source winget --accept-source-agreements --accept-package-agreements
+        if ($LASTEXITCODE -ne 0) {
+            throw "Node.js installation failed (winget exit code: $LASTEXITCODE)."
+        }
+        $env:Path = @(
+            $env:Path
+            [Environment]::GetEnvironmentVariable('Path', 'Machine')
+            [Environment]::GetEnvironmentVariable('Path', 'User')
+        ) -join ';'
+        if (-not (Get-Command node.exe -ErrorAction SilentlyContinue)) {
+            throw 'Node.js is still unavailable after installation. Open a new PowerShell window and run this script again.'
+        }
     }
     & $BridgeInstaller -SkipStart
 } catch {
