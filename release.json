@@ -4,7 +4,7 @@
   "time": "2026-11-27 16:06:11",
   "desc": "# 「通义千问」更名「AI 助手」\n- 支持自定义模型\n- 可合并入聊天室\n- 主动发温馨提示\n# 近期已报告多起无法更新的案例，请考虑：\n## 浏览器开发者工具——应用程序——IndexedDB——BJTUCA-FileSystem——删除数据库\n## 或彻底卸载并重新安装扩展\n- 尝试圣诞新风格\n- 阻止「智慧课程平台」反调试",
   "url": "https://s1y4x1.github.io/BJTU-course-assistant-main.zip",
-  "apk": "https://s1y4x1.github.io/BJTUCA-v1.2.3.apk",
+  "apk": "https://s1y4x1.github.io/BJTUCA-v1.2.4.apk",
   "clean": false,
   "reload": true,
   "force": true
